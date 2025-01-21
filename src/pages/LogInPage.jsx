@@ -1,11 +1,11 @@
 import React from "react";
 import AuthForm from "../components/Auth/AuthForm";
 
-function LogInPage() {
+function LogInPage({setUser}) {
   return (
     <div>
-           <h2>Лога</h2>
-      <AuthForm />
+      <h2>Лога</h2>
+      <AuthForm setUser={setUser} />
     </div>
   );
 }

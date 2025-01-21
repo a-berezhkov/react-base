@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
 
-function Layout() {
+function Layout({user}) {
   return (
     <>
       <header>
@@ -22,6 +22,17 @@ function Layout() {
             <li>
               <Link to={"/reg"}>Рега</Link>
             </li>
+            {
+              user ? (
+                <li>
+                  {user.email}
+                </li>
+              ) : (
+                <li>
+                  <Link to={"/login"}>Войти</Link>
+                </li>
+              )
+            }
           </ul>
         </nav>
       </header>
