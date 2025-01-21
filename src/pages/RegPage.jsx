@@ -1,8 +1,11 @@
 import React from 'react'
+import RegForm from '../components/Auth/RegForm'
 
 function RegPage() {
   return (
-    <div>RegPage</div>
+    <div>
+      <RegForm />
+    </div>
   )
 }
 
